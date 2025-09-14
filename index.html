@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OKEVENTS — Where Business Meets Experience</title>
+  <meta name="description" content="Corporate conferences, trade shows and executive events with global standards and flawless local execution." />
+  <meta name="theme-color" content="#0A2342" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              blue: '#0A2342',
+              orange: '#FF6B35',
+              gray: '#EAEAEA'
+            }
+          },
+          fontFamily: {
+            heading: ['Montserrat', 'ui-sans-serif', 'system-ui'],
+            body: ['"Source Sans 3"', 'ui-sans-serif', 'system-ui']
+          },
+          boxShadow: {
+            soft: '0 10px 30px rgba(10, 35, 66, 0.08)'
+          },
+          borderRadius: {
+            xl2: '1.25rem'
+          },
+          maxWidth: {
+            container: '1240px'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root{color-scheme: light;} html{scroll-behavior:smooth}
+    .clip-diag{clip-path: polygon(0 0,100% 0,100% 85%,0 100%)}
+  </style>
+  <!-- Open Graph -->
+  <meta property="og:title" content="OKEVENTS — Where Business Meets Experience">
+  <meta property="og:description" content="Corporate conferences, trade shows and executive events with global standards and flawless local execution.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/og-okevents.jpg">
+  <link rel="icon" href="/favicon.ico">
+  
+  <!-- JSON-LD Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "OKEVENTS",
+    "url": "https://www.okevents.example",
+    "logo": "https://www.okevents.example/assets/logo-okevents.svg",
+    "sameAs": [
+      "https://www.linkedin.com/company/okevents",
+      "https://www.instagram.com/okevents",
+      "https://www.youtube.com/@okevents"
+    ]
+  }
+  </script>
+</head>
+<body class="font-body text-slate-800 bg-white">
+  <!-- Top Bar -->
+  <div class="bg-brand-blue text-white text-sm">
+    <div class="max-w-container mx-auto flex items-center justify-between px-4 py-2">
+      <p class="opacity-80">Global Standards · Local Impact</p>
+      <a href="#brief" class="underline hover:no-underline">Start your event today</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-brand-gray/60">
+    <div class="max-w-container mx-auto flex items-center justify-between px-4 py-3">
+      <a href="#" class="flex items-center gap-3" aria-label="OKEVENTS Home">
+        <img src="/assets/logo-okevents.svg" alt="OKEVENTS" class="h-8 w-auto" />
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-brand-blue">
+        <a href="#services" class="hover:opacity-80">Services</a>
+        <a href="#about" class="hover:opacity-80">About</a>
+        <a href="#contact" class="hover:opacity-80">Contact</a>
+        <a href="#brief" class="ml-2 px-4 py-2 rounded-xl bg-brand-orange text-white font-semibold hover:shadow">Start Your Event</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border text-brand-blue" aria-controls="mobileNav" aria-expanded="false" aria-label="Open menu">☰</button>
+    </div>
+    <nav id="mobileNav" class="md:hidden hidden border-t">
+      <div class="px-4 py-3 space-y-2 text-brand-blue">
+        <a class="block" href="#services">Services</a>
+        <a class="block" href="#about">About</a>
+        <a class="block" href="#contact">Contact</a>
+        <a class="block px-4 py-2 rounded-xl bg-brand-orange text-white font-semibold w-max" href="#brief">Start Your Event</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative bg-brand-blue text-white">
+    <div class="max-w-container mx-auto grid md:grid-cols-2 gap-8 items-center px-4 py-20">
+      <div>
+        <h1 class="font-heading text-4xl md:text-5xl font-extrabold leading-tight">Where Business Meets Experience.</h1>
+        <p class="mt-4 text-lg text-white/80">We design and produce corporate conferences, trade shows, and executive events with global standards and flawless local execution.</p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="#brief" class="px-6 py-3 rounded-xl bg-brand-orange text-white font-semibold shadow-soft">Start your event</a>
+          <a href="/assets/OKEVENTS-Company-Profile.pdf" class="px-6 py-3 rounded-xl border border-white/70 font-semibold">Download company profile</a>
+        </div>
+      </div>
+      <div class="relative">
+        <img src="/assets/hero-stage.jpg" alt="Corporate conference stage" class="rounded-2xl shadow-soft" />
+        <div class="absolute -bottom-6 -right-6 bg-white text-brand-blue px-4 py-3 rounded-xl shadow-soft font-semibold">Americas · EMEA · APAC</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value Pillars -->
+  <section class="py-14">
+    <div class="max-w-container mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-5">
+        <div class="p-6 rounded-2xl border border-brand-gray bg-white shadow-soft">
+          <div class="text-brand-blue font-heading font-bold text-lg">Global Standards</div>
+          <p class="mt-2 text-slate-600">ISO‑grade processes, multilingual teams, enterprise SLAs.</p>
+        </div>
+        <div class="p-6 rounded-2xl border border-brand-gray bg-white shadow-soft">
+          <div class="text-brand-blue font-heading font-bold text-lg">Local Impact</div>
+          <p class="mt-2 text-slate-600">Trusted local partners and vetted vendor networks.</p>
+        </div>
+        <div class="p-6 rounded-2xl border border-brand-gray bg-white shadow-soft">
+          <div class="text-brand-blue font-heading font-bold text-lg">Tech‑Driven</div>
+          <p class="mt-2 text-slate-600">AV, streaming, interpretation and registration platforms.</p>
+        </div>
+        <div class="p-6 rounded-2xl border border-brand-gray bg-white shadow-soft">
+          <div class="text-brand-blue font-heading font-bold text-lg">ROI & Reporting</div>
+          <p class="mt-2 text-slate-600">KPI framework, compliance & post‑event analytics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 bg-slate-50">
+    <div class="max-w-container mx-auto px-4">
+      <h2 class="font-heading text-3xl md:text-4xl font-extrabold text-brand-blue">Our Services</h2>
+      <p class="mt-2 text-slate-600 max-w-3xl">End‑to‑end management for international corporate events. Modular services to fit your scope and KPIs.</p>
+
+      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card -->
+        <article class="p-6 rounded-2xl bg-white border border-brand-gray hover:shadow-soft transition">
+          <div class="font-heading font-bold text-xl text-brand-blue">Conferences & Summits</div>
+          <ul class="mt-3 space-y-1 text-slate-600 list-disc list-inside">
+            <li>Agenda design & speaker ops</li>
+            <li>Hospitality & protocol</li>
+            <li>Registration & accreditation</li>
+          </ul>
+        </article>
+        <article class="p-6 rounded-2xl bg-white border border-brand-gray hover:shadow-soft transition">
+          <div class="font-heading font-bold text-xl text-brand-blue">Trade Shows & Exhibitions</div>
+          <ul class="mt-3 space-y-1 text-slate-600 list-disc list-inside">
+            <li>Booth design & build</li>
+            <li>Exhibitor coordination</li>
+            <li>Access control & safety</li>
+          </ul>
+        </article>
+        <article class="p-6 rounded-2xl bg-white border border-brand-gray hover:shadow-soft transition">
+          <div class="font-heading font-bold text-xl text-brand-blue">Corporate Events</div>
+          <ul class="mt-3 space-y-1 text-slate-600 list-disc list-inside">
+            <li>Product launches & roadshows</li>
+            <li>Executive dinners & networking</li>
+            <li>Hybrid & virtual formats</li>
+          </ul>
+        </article>
+        <article class="p-6 rounded-2xl bg-white border border-brand-gray hover:shadow-soft transition">
+          <div class="font-heading font-bold text-xl text-brand-blue">Technical Production</div>
+          <ul class="mt-3 space-y-1 text-slate-600 list-disc list-inside">
+            <li>AV, lighting & LED walls</li>
+            <li>Streaming & interpretation</li>
+            <li>On‑site & remote tech support</li>
+          </ul>
+        </article>
+        <article class="p-6 rounded-2xl bg-white border border-brand-gray hover:shadow-soft transition">
+          <div class="font-heading font-bold text-xl text-brand-blue">Consulting & Strategy</div>
+          <ul class="mt-3 space-y-1 text-slate-600 list-disc list-inside">
+            <li>Event strategy & comms</li>
+            <li>ROI framework & KPIs</li>
+            <li>Compliance & sustainability</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Reach & Compliance -->
+  <section id="about" class="py-16">
+    <div class="max-w-container mx-auto px-4 grid lg:grid-cols-2 gap-10 items-start">
+      <div>
+        <h2 class="font-heading text-3xl md:text-4xl font-extrabold text-brand-blue">Global Reach</h2>
+        <p class="mt-2 text-slate-600">We operate across key regions with vetted partner networks.</p>
+        <ul class="mt-4 grid grid-cols-2 gap-2 text-brand-blue font-semibold">
+          <li>Americas</li>
+          <li>EMEA</li>
+          <li>APAC</li>
+          <li>Remote / Hybrid</li>
+        </ul>
+        <img src="/assets/world-outline.svg" alt="Global coverage" class="mt-6 w-full max-w-lg" />
+      </div>
+      <div>
+        <h3 class="font-heading text-2xl font-bold text-brand-blue">Operations & Compliance</h3>
+        <div class="mt-4 grid sm:grid-cols-2 gap-4">
+          <div class="p-5 rounded-2xl border bg-white">
+            <p class="font-semibold text-brand-blue">Health & Safety</p>
+            <p class="text-slate-600">Risk assessments, emergency plans, insured vendors.</p>
+          </div>
+          <div class="p-5 rounded-2xl border bg-white">
+            <p class="font-semibold text-brand-blue">GDPR & Data Privacy</p>
+            <p class="text-slate-600">Secure registration and attendee data handling.</p>
+          </div>
+          <div class="p-5 rounded-2xl border bg-white">
+            <p class="font-semibold text-brand-blue">Sustainability</p>
+            <p class="text-slate-600">Waste reduction, material reuse, green suppliers.</p>
+          </div>
+          <div class="p-5 rounded-2xl border bg-white">
+            <p class="font-semibold text-brand-blue">Vendor Management</p>
+            <p class="text-slate-600">RFPs, SLAs and performance tracking.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA / Brief form -->
+  <section id="brief" class="py-16 bg-brand-blue text-white">
+    <div class="max-w-container mx-auto px-4 grid lg:grid-cols-3 gap-8 items-start">
+      <div class="lg:col-span-2">
+        <h2 class="font-heading text-3xl md:text-4xl font-extrabold">Ready for your next conference?</h2>
+        <p class="mt-2 text-white/80">Share the basics. Our producer will contact you today.</p>
+      </div>
+      <form action="#" method="post" class="bg-white rounded-2xl p-5 grid gap-3 text-slate-800 shadow-soft" aria-label="Start your event form">
+        <div class="grid sm:grid-cols-2 gap-3">
+          <input name="name" aria-label="Name" placeholder="Name" class="border rounded-lg p-3" required>
+          <input name="company" aria-label="Company" placeholder="Company" class="border rounded-lg p-3" required>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-3">
+          <input type="email" name="email" aria-label="Email" placeholder="Email" class="border rounded-lg p-3" required>
+          <input name="country" aria-label="Country" placeholder="Country/Region" class="border rounded-lg p-3" required>
+        </div>
+        <select name="event" aria-label="Event type" class="border rounded-lg p-3">
+          <option>Event type</option>
+          <option>Conference</option>
+          <option>Trade Show</option>
+          <option>Corporate Event</option>
+          <option>Hybrid</option>
+        </select>
+        <button class="mt-1 bg-brand-orange text-white font-semibold rounded-lg p-3">Submit</button>
+        <p class="text-xs text-slate-500">By submitting you accept our <a href="#" class="underline">Privacy Policy</a>.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact & Footer -->
+  <section id="contact" class="py-16">
+    <div class="max-w-container mx-auto px-4 grid lg:grid-cols-3 gap-8 items-start">
+      <div class="lg:col-span-2">
+        <h2 class="font-heading text-3xl md:text-4xl font-extrabold text-brand-blue">Contact</h2>
+        <p class="mt-2 text-slate-600">Reach our regional teams for quotes and availability.</p>
+        <ul class="mt-6 grid sm:grid-cols-2 gap-4">
+          <li class="p-5 rounded-2xl border">
+            <p class="font-semibold text-brand-blue">Americas</p>
+            <p class="text-slate-600">americas@okevents.co · +1 (000) 000‑0000</p>
+          </li>
+          <li class="p-5 rounded-2xl border">
+            <p class="font-semibold text-brand-blue">EMEA</p>
+            <p class="text-slate-600">emea@okevents.co · +44 0000 000000</p>
+          </li>
+          <li class="p-5 rounded-2xl border">
+            <p class="font-semibold text-brand-blue">APAC</p>
+            <p class="text-slate-600">apac@okevents.co · +61 0 0000 0000</p>
+          </li>
+        </ul>
+      </div>
+      <form action="#" method="post" class="bg-white rounded-2xl p-5 grid gap-3 border shadow-soft" aria-label="General contact form">
+        <input name="name" placeholder="Name" class="border rounded-lg p-3" required>
+        <input type="email" name="email" placeholder="Email" class="border rounded-lg p-3" required>
+        <input name="company" placeholder="Company" class="border rounded-lg p-3">
+        <textarea name="message" placeholder="Message" class="border rounded-lg p-3 min-h-[120px]"></textarea>
+        <label class="inline-flex items-center gap-2 text-sm text-slate-600"><input type="checkbox" required> I accept the Privacy Policy</label>
+        <button class="bg-brand-orange text-white font-semibold rounded-lg p-3">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="border-t py-10">
+    <div class="max-w-container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <img src="/assets/logo-okevents.svg" alt="OKEVENTS" class="h-7 w-auto" />
+        <span class="text-slate-600">© <span id="y"></span> OKEVENTS. All rights reserved.</span>
+      </div>
+      <nav class="flex items-center gap-4 text-slate-600">
+        <a href="#services" class="hover:text-brand-blue">Services</a>
+        <a href="#about" class="hover:text-brand-blue">About</a>
+        <a href="#contact" class="hover:text-brand-blue">Contact</a>
+        <a href="#" class="hover:text-brand-blue">Privacy</a>
+        <a href="#" class="hover:text-brand-blue">Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const btn = document.getElementById('menuBtn');
+    const nav = document.getElementById('mobileNav');
+    btn?.addEventListener('click', ()=>{
+      const open = nav.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!open));
+    });
+    // Year
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
