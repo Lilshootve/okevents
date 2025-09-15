@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>OKEVENTS Company Profile</title>
+<style>
+:root {
+  --blue: #0A2342;
+  --orange: #FF6B35;
+  --light-gray: #EAEAEA;
+  --black: #111111;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  color: var(--black);
+}
+section {
+  padding: 40px 60px;
+}
+.cover {
+  background-color: var(--blue);
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.cover img {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 100px;
+  height: 100px;
+}
+.cover h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+.cover h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+h2.section-title {
+  color: var(--blue);
+  margin-top: 0;
+}
+.divider {
+  height: 4px;
+  background-color: var(--orange);
+  margin: 30px 0;
+  width: 60px;
+}
+.services-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 15px;
+}
+.services-list div {
+  display: flex;
+  align-items: flex-start;
+}
+.bar-chart {
+  margin-top: 20px;
+}
+.bar-label {
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+.bar-container {
+  background-color: var(--light-gray);
+  width: 100%;
+  height: 24px;
+  margin-bottom: 10px;
+}
+.bar-fill {
+  height: 24px;
+  background-color: var(--blue);
+}
+.process-steps {
+  list-style-type: none;
+  padding-left: 0;
+  counter-reset: step;
+}
+.process-steps li {
+  margin-bottom: 10px;
+  padding-left: 40px;
+  position: relative;
+}
+.process-steps li::before {
+  content: counter(step);
+  counter-increment: step;
+  background-color: var(--orange);
+  color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.footer {
+  background-color: var(--blue);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+}
+</style>
+</head>
+<body>
+<div class="cover">
+<img src="assets/OKEVENTS.png" alt="OKEVENTS logo" aria-hidden="true" />
+<h1>OKEVENTS</h1>
+<h2>Where Business Meets Experience</h2>
+</div>
+<section id="about">
+<h2 class="section-title">About OKEVENTS</h2>
+<div class="divider"></div>
+<p>OKEVENTS is a global partner in corporate event management. We design and execute conferences, trade shows and executive events with international standards and flawless local execution. Our mission is to transform ideas into impactful experiences for businesses worldwide.</p>
+</section>
+<section id="services">
+<h2 class="section-title">Our Services</h2>
+<div class="divider"></div>
+<p>We offer a comprehensive portfolio tailored to the needs of international corporations:</p>
+<div class="services-list">
+<div><strong>Conferences &amp; Summits:</strong>&nbsp;&nbsp;Agenda design, speaker management, executive hospitality and accreditation.</div>
+<div><strong>Trade Shows &amp; Exhibitions:</strong>&nbsp;&nbsp;Stand design &amp; build, exhibitor coordination, registration and access control.</div>
+<div><strong>Corporate Events:</strong>&nbsp;&nbsp;Product launches, roadshows, executive dinners and hybrid experiences.</div>
+<div><strong>Technical Production:</strong>&nbsp;&nbsp;Audio, video and lighting, live streaming, interpretation and interactive screens.</div>
+<div><strong>Consulting &amp; Strategy:</strong>&nbsp;&nbsp;Event strategy, ROI framework, compliance and sustainability consultancy.</div>
+</div>
+</section>
+<section id="reach">
+<h2 class="section-title">Global Reach</h2>
+<div class="divider"></div>
+<p>Our operations span all major regions with a balance that demonstrates our international footprint.</p>
+<div class="bar-chart">
+<div class="bar-label">Americas 40%</div>
+<div class="bar-container">
+<div class="bar-fill" style="width:40%;"></div>
+</div>
+<div class="bar-label">EMEA 35%</div>
+<div class="bar-container">
+<div class="bar-fill" style="width:35%;"></div>
+</div>
+<div class="bar-label">APAC 25%</div>
+<div class="bar-container">
+<div class="bar-fill" style="width:25%;"></div>
+</div>
+</div>
+</section>
+<section id="differentials">
+<h2 class="section-title">Our Differentials</h2>
+<div class="divider"></div>
+<ul>
+<li><strong>Compliance:</strong> We adhere to GDPR, health &amp; safety and sustainability standards.</li>
+<li><strong>ROI &amp; Reporting:</strong> We define and track KPIs to maximize business impact.</li>
+<li><strong>Global Network:</strong> We work with trusted partners and suppliers worldwide.</li>
+</ul>
+</section>
+<section id="process">
+<h2 class="section-title">Our Process</h2>
+<div class="divider"></div>
+<p>We approach every project with a structured methodology:</p>
+<ol class="process-steps">
+<li><strong>Discover:</strong> We listen to your objectives and requirements.</li>
+<li><strong>Design:</strong> We craft a bespoke concept and plan for your event.</li>
+<li><strong>Deliver:</strong> We execute with precision and manage every detail.</li>
+<li><strong>Debrief:</strong> We evaluate performance and provide comprehensive reporting.</li>
+</ol>
+</section>
+<section id="clients">
+<h2 class="section-title">Clients &amp; Experience</h2>
+<div class="divider"></div>
+<p>Our expertise spans multiple industries including technology, finance, healthcare and government. We collaborate with leading corporations and institutions to deliver exceptional experiences.</p>
+</section>
+<section id="contact">
+<h2 class="section-title">Contact</h2>
+<div class="divider"></div>
+<p>Connect with our international offices to discuss your next event.</p>
+<p><strong>Americas:</strong> usa@okevents.co<br/>
+<strong>EMEA:</strong> emea@okevents.co<br/>
+<strong>APAC:</strong> apac@okevents.co</p>
+<p>Submit your RFP at <a href="https://www.okevents.co/brief">www.okevents.co/brief</a></p>
+</section>
+<div class="footer">
+<p>OKEVENTS &copy; 2025. All rights reserved.</p>
+</div>
+</body>
+</html>
+
+
