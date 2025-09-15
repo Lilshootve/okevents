@@ -68,7 +68,7 @@
 </head>
 <body class="font-body text-slate-800 bg-white">
   <!-- Top Bar -->
-  <div class="bg-brand-blue text-white text-sm">
+  <div class="bg-brand-blue text-white text-sm hidden md:block">
     <div class="max-w-container mx-auto flex items-center justify-between px-4 py-2">
       <p class="opacity-80">Global Standards · Local Impact</p>
       <a href="#brief" class="underline hover:no-underline">Start your event today</a>
@@ -79,7 +79,7 @@
   <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-brand-gray/60">
     <div class="max-w-container mx-auto flex items-center justify-between px-4 py-3">
       <a href="#" class="flex items-center gap-3" aria-label="OKEVENTS Home">
-        <img src="assets/OKEVENTS.png" alt="OKEVENTS" class="h-24 w-auto" />
+        <img src="assets/OKEVENTS.png" alt="OKEVENTS" class="h-16 md:h-24 w-auto" />
       </a>
       <nav class="hidden md:flex items-center gap-8 text-brand-blue">
         <a href="#services" class="hover:opacity-80">Services</a>
@@ -101,25 +101,25 @@
 
   <!-- Hero -->
   <section class="relative bg-brand-blue text-white">
-    <div class="max-w-container mx-auto grid md:grid-cols-2 gap-8 items-center px-4 py-20">
-      <div>
-        <h1 class="font-heading text-4xl md:text-5xl font-extrabold leading-tight">Where Business Meets Experience.</h1>
-        <p class="mt-4 text-lg text-white/80">We design and produce corporate conferences, trade shows, and executive events with global standards and flawless local execution.</p>
-        <div class="mt-8 flex flex-wrap gap-4">
-          <a href="#brief" class="px-6 py-3 rounded-xl bg-brand-orange text-white font-semibold shadow-soft">Start your event</a>
+    <div class="max-w-container mx-auto grid md:grid-cols-2 gap-8 items-center px-4 py-12 md:py-20">
+      <div class="order-2 md:order-1">
+        <h1 class="font-heading text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight">Where Business Meets Experience.</h1>
+        <p class="mt-4 text-base md:text-lg text-white/80">We design and produce corporate conferences, trade shows, and executive events with global standards and flawless local execution.</p>
+        <div class="mt-6 md:mt-8 flex flex-wrap gap-4">
+          <a href="#brief" class="px-6 py-3 rounded-xl bg-brand-orange text-white font-semibold shadow-soft w-full sm:w-auto text-center">Start your event</a>
         </div>
       </div>
-      <div class="relative">
-        <img src="/assets/hero-stage.jpg" alt="Corporate conference stage" class="rounded-2xl shadow-soft" />
-        <div class="absolute -bottom-6 -right-6 bg-white text-brand-blue px-4 py-3 rounded-xl shadow-soft font-semibold">Americas · EMEA · APAC</div>
+      <div class="relative order-1 md:order-2">
+        <img src="/assets/hero-stage.jpg" alt="Corporate conference stage" class="rounded-2xl shadow-soft w-full" />
+        <div class="absolute -bottom-3 md:-bottom-6 -right-3 md:-right-6 bg-white text-brand-blue px-3 md:px-4 py-2 md:py-3 rounded-xl shadow-soft font-semibold text-sm md:text-base">Americas · EMEA · APAC</div>
       </div>
     </div>
   </section>
 
   <!-- Value Pillars -->
-  <section class="py-14">
+  <section class="py-8 md:py-14">
     <div class="max-w-container mx-auto px-4">
-      <div class="grid md:grid-cols-4 gap-5">
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-5">
         <div class="p-6 rounded-2xl border border-brand-gray bg-white shadow-soft">
           <div class="text-brand-blue font-heading font-bold text-lg">Global Standards</div>
           <p class="mt-2 text-slate-600">ISO‑grade processes, multilingual teams, enterprise SLAs.</p>
@@ -141,12 +141,12 @@
   </section>
 
   <!-- Services -->
-  <section id="services" class="py-16 bg-slate-50">
+  <section id="services" class="py-12 md:py-16 bg-slate-50">
     <div class="max-w-container mx-auto px-4">
-      <h2 class="font-heading text-3xl md:text-4xl font-extrabold text-brand-blue">Our Services</h2>
+      <h2 class="font-heading text-2xl sm:text-3xl md:text-4xl font-extrabold text-brand-blue">Our Services</h2>
       <p class="mt-2 text-slate-600 max-w-3xl">End‑to‑end management for international corporate events. Modular services to fit your scope and KPIs.</p>
 
-      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="mt-8 md:mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
         <!-- Card -->
         <article class="p-6 rounded-2xl bg-white border border-brand-gray hover:shadow-soft transition">
           <div class="font-heading font-bold text-xl text-brand-blue">Conferences & Summits</div>
@@ -193,12 +193,12 @@
   </section>
 
   <!-- Global Reach & Compliance -->
-  <section id="about" class="py-16">
-    <div class="max-w-container mx-auto px-4 grid lg:grid-cols-2 gap-10 items-start">
+  <section id="about" class="py-12 md:py-16">
+    <div class="max-w-container mx-auto px-4 grid lg:grid-cols-2 gap-8 md:gap-10 items-start">
       <div>
-        <h2 class="font-heading text-3xl md:text-4xl font-extrabold text-brand-blue">Global Reach</h2>
+        <h2 class="font-heading text-2xl sm:text-3xl md:text-4xl font-extrabold text-brand-blue">Global Reach</h2>
         <p class="mt-2 text-slate-600">We operate across key regions with vetted partner networks.</p>
-        <ul class="mt-4 grid grid-cols-2 gap-2 text-brand-blue font-semibold">
+        <ul class="mt-4 grid grid-cols-2 gap-2 text-brand-blue font-semibold text-sm md:text-base">
           <li>Americas</li>
           <li>EMEA</li>
           <li>APAC</li>
@@ -207,8 +207,8 @@
         
       </div>
       <div>
-        <h3 class="font-heading text-2xl font-bold text-brand-blue">Operations & Compliance</h3>
-        <div class="mt-4 grid sm:grid-cols-2 gap-4">
+        <h3 class="font-heading text-xl md:text-2xl font-bold text-brand-blue">Operations & Compliance</h3>
+        <div class="mt-4 grid sm:grid-cols-2 gap-3 md:gap-4">
           <div class="p-5 rounded-2xl border bg-white">
             <p class="font-semibold text-brand-blue">Health & Safety</p>
             <p class="text-slate-600">Risk assessments, emergency plans, insured vendors.</p>
@@ -231,13 +231,13 @@
   </section>
 
   <!-- Final CTA / Brief form -->
-  <section id="brief" class="py-16 bg-brand-blue text-white">
-    <div class="max-w-container mx-auto px-4 grid lg:grid-cols-3 gap-8 items-start">
+  <section id="brief" class="py-12 md:py-16 bg-brand-blue text-white">
+    <div class="max-w-container mx-auto px-4 grid lg:grid-cols-3 gap-6 md:gap-8 items-start">
       <div class="lg:col-span-2">
-        <h2 class="font-heading text-3xl md:text-4xl font-extrabold">Ready for your next conference?</h2>
+        <h2 class="font-heading text-2xl sm:text-3xl md:text-4xl font-extrabold">Ready for your next conference?</h2>
         <p class="mt-2 text-white/80">Share the basics. Our producer will contact you today.</p>
       </div>
-      <form action="#" method="post" class="bg-white rounded-2xl p-5 grid gap-3 text-slate-800 shadow-soft" aria-label="Start your event form">
+      <form action="#" method="post" class="bg-white rounded-2xl p-4 md:p-5 grid gap-3 text-slate-800 shadow-soft" aria-label="Start your event form">
         <div class="grid sm:grid-cols-2 gap-3">
           <input name="name" aria-label="Name" placeholder="Name" class="border rounded-lg p-3" required>
           <input name="company" aria-label="Company" placeholder="Company" class="border rounded-lg p-3" required>
@@ -260,18 +260,18 @@
   </section>
 
   <!-- Contact & Footer -->
-  <section id="contact" class="py-16">
-    <div class="max-w-container mx-auto px-4 grid lg:grid-cols-3 gap-8 items-start">
+  <section id="contact" class="py-12 md:py-16">
+    <div class="max-w-container mx-auto px-4 grid lg:grid-cols-3 gap-6 md:gap-8 items-start">
       <div class="lg:col-span-2">
-        <h2 class="font-heading text-3xl md:text-4xl font-extrabold text-brand-blue">Contact</h2>
-        <div class="mt-6 p-5 rounded-2xl border bg-white space-y-1">
-          <p class="text-slate-800 font-semibold">+19515546318</p>
-          <p class="text-slate-600">3600 LIME ST BLDG 2</p>
-          <p class="text-slate-600">RIVERSIDE, CA 92501</p>
-          <p class="text-slate-600">info@okeventsite.com</p>
+        <h2 class="font-heading text-2xl sm:text-3xl md:text-4xl font-extrabold text-brand-blue">Contact</h2>
+        <div class="mt-6 p-4 md:p-5 rounded-2xl border bg-white space-y-1">
+          <p class="text-slate-800 font-semibold text-sm md:text-base">+19515546318</p>
+          <p class="text-slate-600 text-sm md:text-base">3600 LIME ST BLDG 2</p>
+          <p class="text-slate-600 text-sm md:text-base">RIVERSIDE, CA 92501</p>
+          <p class="text-slate-600 text-sm md:text-base">info@okeventsite.com</p>
         </div>
       </div>
-      <form action="#" method="post" class="bg-white rounded-2xl p-5 grid gap-3 border shadow-soft" aria-label="General contact form">
+      <form action="#" method="post" class="bg-white rounded-2xl p-4 md:p-5 grid gap-3 border shadow-soft" aria-label="General contact form">
         <input name="name" placeholder="Name" class="border rounded-lg p-3" required>
         <input type="email" name="email" placeholder="Email" class="border rounded-lg p-3" required>
         <input name="company" placeholder="Company" class="border rounded-lg p-3">
@@ -282,13 +282,13 @@
     </div>
   </section>
 
-  <footer class="border-t py-10">
+  <footer class="border-t py-8 md:py-10">
     <div class="max-w-container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
       <div class="flex items-center gap-3">
-        <img src="assets/OKEVENTS.png" alt="OKEVENTS" class="h-10 w-auto" />
-        <span class="text-slate-600">© <span id="y"></span> OKEVENTS. All rights reserved.</span>
+        <img src="assets/OKEVENTS.png" alt="OKEVENTS" class="h-8 md:h-10 w-auto" />
+        <span class="text-slate-600 text-sm md:text-base">© <span id="y"></span> OKEVENTS. All rights reserved.</span>
       </div>
-      <nav class="flex items-center gap-4 text-slate-600">
+      <nav class="flex flex-wrap items-center gap-3 md:gap-4 text-slate-600 text-sm md:text-base">
         <a href="#services" class="hover:text-brand-blue">Services</a>
         <a href="#about" class="hover:text-brand-blue">About</a>
         <a href="#contact" class="hover:text-brand-blue">Contact</a>
