@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OKEVENTS — Terms</title>
+  <meta name="description" content="Terms of Service for OKEVENTS." />
+  <meta name="theme-color" content="#0A2342" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              blue: '#0A2342',
+              orange: '#FF6B35',
+              gray: '#EAEAEA'
+            }
+          },
+          fontFamily: {
+            heading: ['Montserrat', 'ui-sans-serif', 'system-ui'],
+            body: ['"Source Sans 3"', 'ui-sans-serif', 'system-ui']
+          },
+          boxShadow: {
+            soft: '0 10px 30px rgba(10, 35, 66, 0.08)'
+          },
+          borderRadius: {
+            xl2: '1.25rem'
+          },
+          maxWidth: {
+            container: '1240px'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root{color-scheme: light;} html{scroll-behavior:smooth}
+  </style>
+  <!-- Open Graph -->
+  <meta property="og:title" content="OKEVENTS — Terms">
+  <meta property="og:description" content="Terms of Service for OKEVENTS.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/OKEVENTS.png">
+  <link rel="icon" type="image/png" href="assets/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="OKEVENTS" />
+  <link rel="manifest" href="assets/site.webmanifest" />
+</head>
+<body class="font-body text-slate-800 bg-white">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-brand-gray/60">
+    <div class="max-w-container mx-auto flex items-center justify-between px-4 py-3">
+      <a href="index.html" class="flex items-center gap-3" aria-label="OKEVENTS Home">
+        <img src="assets/OKEVENTS.png" alt="OKEVENTS" class="h-16 md:h-24 w-auto" />
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-brand-blue">
+        <a href="index.html#services" class="hover:opacity-80">Services</a>
+        <a href="index.html#about" class="hover:opacity-80">About</a>
+        <a href="index.html#contact" class="hover:opacity-80">Contact</a>
+        <a href="index.html#brief" class="ml-2 px-4 py-2 rounded-xl bg-brand-orange text-white font-semibold hover:shadow">Start Your Event</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border text-brand-blue" aria-controls="mobileNav" aria-expanded="false" aria-label="Open menu">☰</button>
+    </div>
+    <nav id="mobileNav" class="md:hidden hidden border-t">
+      <div class="px-4 py-3 space-y-2 text-brand-blue">
+        <a class="block" href="index.html#services">Services</a>
+        <a class="block" href="index.html#about">About</a>
+        <a class="block" href="index.html#contact">Contact</a>
+        <a class="block px-4 py-2 rounded-xl bg-brand-orange text-white font-semibold w-max" href="index.html#brief">Start Your Event</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="py-12 md:py-16">
+      <div class="max-w-container mx-auto px-4">
+        <h1 class="font-heading text-3xl md:text-4xl font-extrabold text-brand-blue">Terms of Service</h1>
+        <p class="mt-3 text-slate-600 max-w-3xl">These Terms of Service govern your use of the OKEVENTS website and services. By accessing or using our services, you agree to be bound by these terms.</p>
+        <div class="mt-8 space-y-6">
+          <section>
+            <h2 class="font-heading text-xl font-bold text-brand-blue">1. Use of Services</h2>
+            <p class="mt-2 text-slate-700">You agree to use our services in compliance with applicable laws and not to misuse or interfere with the platform.</p>
+          </section>
+          <section>
+            <h2 class="font-heading text-xl font-bold text-brand-blue">2. Privacy</h2>
+            <p class="mt-2 text-slate-700">Your use of our services is also governed by our <a href="policy.html" class="underline text-brand-blue">Privacy Policy</a>.</p>
+          </section>
+          <section>
+            <h2 class="font-heading text-xl font-bold text-brand-blue">3. Changes</h2>
+            <p class="mt-2 text-slate-700">We may update these terms from time to time. We will post the updated terms on this page.</p>
+          </section>
+          <section>
+            <h2 class="font-heading text-xl font-bold text-brand-blue">4. Contact</h2>
+            <p class="mt-2 text-slate-700">Questions about these terms? Contact us at <a href="mailto:info@okeventsite.com" class="underline">info@okeventsite.com</a>.</p>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t py-8 md:py-10">
+    <div class="max-w-container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <img src="assets/OKEVENTS.png" alt="OKEVENTS" class="h-8 md:h-10 w-auto" />
+        <span class="text-slate-600 text-sm md:text-base">© <span id="y"></span> OKEVENTS. All rights reserved.</span>
+      </div>
+      <nav class="flex flex-wrap items-center gap-3 md:gap-4 text-slate-600 text-sm md:text-base">
+        <a href="index.html#services" class="hover:text-brand-blue">Services</a>
+        <a href="index.html#about" class="hover:text-brand-blue">About</a>
+        <a href="index.html#contact" class="hover:text-brand-blue">Contact</a>
+        <a href="policy.html" class="hover:text-brand-blue">Privacy</a>
+        <a href="terms.html" class="hover:text-brand-blue">Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const nav = document.getElementById('mobileNav');
+    btn?.addEventListener('click', ()=>{
+      const open = nav.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!open));
+    });
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+
